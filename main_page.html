@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bentley Designs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      scroll-behavior: smooth;
+      background-color: #f0f4f8;  
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      z-index: 1000;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: rgb(4, 33, 255); /* navbar text color */
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #00ddff;  /* navbar background color */
+    }
+
+    .section {
+      padding: 100px 20px;
+      margin-top: 50px; /* buffer below navbar */
+    }
+
+    /* partition color
+    a3tzr 3ala b4a3t el color selection🫣
+     */
+    #home { 
+      background-color: #000;
+      color: white;
+    }
+
+    #about {
+      background-color: navy;
+      color: #fff;
+    }
+
+    #contact {
+      background-color: #e3f6f5;
+      color: #111;
+    }
+
+    
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+      margin-top: 40px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Quick and dirty mobile fix, might need media queries later */
+    input, textarea {
+      width: 100%;
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar partition -->
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Home partition -->
+  <div id="home" class="section">
+    <h2>Home</h2>
+    <p>Welcome to Bentley Designs!</p>
+    <p>We are a leading company in super sport engine engineering.</p>
+    <p>Explore our innovative designs and cutting-edge technology.</p>
+    <p>Check out our latest projects and achievements:</p>
+
+    <ul>
+      <li>Project A – A revolutionary engine design</li>
+      <li>Project B – Enhancing performance and efficiency</li>
+      <li>Project C – Pushing the boundaries of speed</li>
+      <li>Project D – Sustainable engineering solutions</li>
+    </ul>
+  </div>
+
+  <!-- About partition -->
+  <div id="about" class="section">
+    <h2>About</h2>
+    <p>We specialize in high-performance engine solutions for the super sport sector.</p>
+    <p>Our team of engineers thrives on innovation and a passion for speed.</p>
+
+    <!-- Suggestion form -->
+    <h3>Suggestion Form</h3>
+    <form>
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+      <label for="birthday">Birthday:</label><br>
+      <input type="date" id="birthday" name="birthday"><br><br>
+
+      <label for="suggestion">Your Suggestion:</label><br>
+      <textarea id="suggestion" name="suggestion" rows="4" placeholder="Write your suggestion here..."></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Contact partition -->
+  <div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:management@bentleydesigns.com">management@bentleydesigns.com</a></p>
+    <p>Phone: +201015410509</p>
+    <p>Address: 1234 Bentley St, Design City, DC 12345</p>
+
+    <!-- links -->
+    <p style="margin-top: 20px;">Follow us on:</p>
+    <p>
+      <a href="https://www.facebook.com/bentleydesigns" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/bentleydesigns" target="_blank">Instagram</a> |
+      <a href="https://www.twitter.com/bentleydesigns" target="_blank">Twitter</a>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <hr>
+  <div class="footer">
+    &copy; 2025 Bentley Designs. All rights reserved.
+  </div>
+
+</body>
+</html>
